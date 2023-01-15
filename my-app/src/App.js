@@ -1,19 +1,24 @@
 //import logo from './logo.svg';
 import './App.css';
 
-const App = () => {
+const Person = (props) => {
+  return (
+    <>
+      <h1>First name : {props.name}</h1>
+      <h1>Last name : {props.last}</h1>
+      <h1>Age : {props.age} </h1>
+    </>
+  )
+}
 
-  const name = null
-  const isName = false;
+const App = () => {
 
   return (
     <div className="App">
-      <h1>Hello, {isName ? name : "no name"} !</h1>
-      {name ? (
-        <>Test</>
-      ) : (
-        <><h1>No name</h1></>
-      )}
+      <Person name={"Samarth"} last={"Gupta"} age={20} />
+      <Person name={"Vanshi"} last={"Shah"} age={19} />
+      <Person name={"Shawty"} last={"Tiwarekar"} age={19} />
+
     </div>
   );
 }
