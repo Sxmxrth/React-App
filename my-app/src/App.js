@@ -15,6 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
+
       <Person name={"Samarth"} last={"Gupta"} age={20} />
       <Person name={"Vanshi"} last={"Shah"} age={19} />
       <Person name={"Shawty"} last={"Tiwarekar"} age={19} />
